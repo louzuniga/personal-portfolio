@@ -1,0 +1,45 @@
+body {
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  letter-spacing: 1px;
+}
+
+/* Header******** */
+.headerImg {
+  width: 100%;
+  z-index: 6;
+}
+.headerMsg {
+  width: 100%;
+  position: absolute;
+  height: 250px;
+  top: 50%;
+  text-align: center;
+  color: rgb(241, 241, 252);
+  z-index: 5;
+  margin-top: -125px;
+}
+.headerName {
+  font-size: 53px;
+  background-color: rgba(135, 139, 143, 0.7);
+  letter-spacing: 6px;
+}
+.headerTitle {
+  font-size: 26px;
+  background-color: rgba(135, 139, 143, 0.7);
+  letter-spacing: 6px;
+}
+
+/* About********** */
+.section {
+  padding: 100px 0;
+}
+.face-shot {
+  width: 100%;
+}
+
+/* Skills **************** */
+.skills-section {
+  background-color: darkslategray;
+}
