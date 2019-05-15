@@ -19,7 +19,7 @@ body {
   text-align: center;
   color: rgb(241, 241, 252);
   z-index: 5;
-  margin-top: -125px;
+  /* margin-top: -125px; */
 }
 .headerName {
   font-size: 53px;
@@ -38,6 +38,7 @@ body {
 }
 .face-shot {
   width: 100%;
+  max-width: 350px;
 }
 
 /* Skills **************** */
@@ -93,4 +94,139 @@ body {
 .col-md-3,
 .col-sm-6 {
   max-width: 100%;
+}
+
+/* contact******** */
+.contact-section {
+  background: url(../img/coffee-sm.jpg) no-repeat;
+  background-size: cover;
+}
+.contact-button {
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 3px;
+  background-color: #607d8b;
+}
+.contact-button:hover {
+  background-color: #fff;
+}
+.contact-button-text:hover {
+  color: #333;
+  text-decoration: none;
+}
+.contact-button-text {
+  color: #fff;
+}
+
+/* Portfolio********** */
+#portfolio {
+  background-color: #607d8b;
+}
+.portfolio-heading {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+.portfolio-img {
+  max-width: 100%;
+  margin: 50px 0;
+}
+.portfolio-text {
+  margin: 50px 0;
+  color: #fff;
+}
+.portfolio-icons {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+.fa-external-link-alt {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fa-external-link-alt:hover {
+  background-color: #05577a;
+  border-radius: 5px;
+}
+.heading-icons {
+  display: inline-flex;
+}
+.heading-text {
+  margin: 0;
+}
+
+/* Footer ***************/
+footer {
+  font-size: 12px;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  background-color: #607d8b;
+  /* position: fixed; */
+  bottom: 0;
+}
+.social-icon {
+  color: #fff;
+}
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+}
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+.fa-twitter {
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fa-twitter:hover {
+  background-color: #00aced;
+  border-radius: 5px;
+}
+.fa-envelope-open {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fa-envelope-open:hover {
+  background-color: #e64a41;
+  border-radius: 5px;
+}
+.fa-linkedin {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fa-linkedin:hover {
+  background-color: #0073a4;
+  border-radius: 5px;
+}
+.fa-github-alt {
+  padding: 10px 9px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fa-github-alt:hover {
+  background-color: #05577a;
+  border-radius: 5px;
 }

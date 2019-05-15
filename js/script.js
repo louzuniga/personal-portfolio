@@ -25,4 +25,8 @@ $(document).ready(() => {
       }
     }
   });
+
+  // Footer and copyright ************
+  let d = new Date();
+  $('#copyright').text(`Copyright \u00A9 ${d.getFullYear()}  Lourexel Zuniga`);
 });
