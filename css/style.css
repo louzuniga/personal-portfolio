@@ -1,12 +1,55 @@
+* {
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Kodchasan', sans-serif;
+}
+
 body {
   font-size: 14px;
   color: #333;
   background-color: #fff;
-  letter-spacing: 1px;
-  font-family: 'Kodchasan', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Pinwheel loader on reload */
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+.loader .inner-loader {
+  width: 100%;
+  height: 100%;
+  background: url(../img/pinwheel-loader.gif) center center no-repeat;
+}
+
+/* Navbar********* */
+#navigation {
+  background-color: #23546d;
+  padding: 10px 10px;
+  z-index: 90;
+}
+#navigation a {
+  color: #fff;
+}
+.fa-bars,
+.navbar-brand,
+.navbar-brand:hover {
+  color: #fff;
 }
 
 /* Header******** */
+/* .img-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+} */
 .headerImg {
   width: 100%;
   z-index: 6;
@@ -19,16 +62,16 @@ body {
   text-align: center;
   color: rgb(241, 241, 252);
   z-index: 5;
-  /* margin-top: -125px; */
+  margin-top: -55px;
 }
 .headerName {
-  font-size: 53px;
-  background-color: rgba(135, 139, 143, 0.7);
+  font-size: 63px;
+  /* background-color: rgba(135, 139, 143, 0.7); */
   letter-spacing: 6px;
 }
 .headerTitle {
-  font-size: 26px;
-  background-color: rgba(135, 139, 143, 0.7);
+  font-size: 36px;
+  /* background-color: rgba(135, 139, 143, 0.7); */
   letter-spacing: 6px;
 }
 
@@ -42,6 +85,17 @@ body {
 }
 
 /* Skills **************** */
+.skills-text h2 {
+  background-color: #23546d;
+  padding: 10px;
+  height: 60px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+.skills-section p {
+  text-align: center;
+}
 .skills-section {
   background-color: #607d8b;
   color: #fff;
@@ -96,7 +150,7 @@ body {
   max-width: 100%;
 }
 
-/* contact******** */
+/* Contact******** */
 .contact-section {
   background: url(../img/coffee-sm.jpg) no-repeat;
   background-size: cover;
@@ -119,18 +173,22 @@ body {
   color: #fff;
 }
 
-/* Portfolio********** */
+/* Projects********** */
 #portfolio {
   background-color: #607d8b;
 }
 .portfolio-heading {
+  background-color: #23546d;
+  padding: 10px;
+  height: 60px;
   text-align: center;
   width: 100%;
   color: #fff;
 }
 .portfolio-img {
   max-width: 100%;
-  margin: 50px 0;
+  margin: 100px 0 0;
+  border-radius: 3px;
 }
 .portfolio-text {
   margin: 50px 0;
@@ -148,17 +206,29 @@ body {
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin-left: 30px;
 }
 .fa-external-link-alt:hover {
   background-color: #05577a;
+  color: #fff;
   border-radius: 5px;
 }
 .heading-icons {
   display: inline-flex;
 }
 .heading-text {
-  margin: 0;
+  margin-top: 8px;
 }
+/* .img-icons {
+  position: absolute;
+  width: 90px;
+  height: 40px;
+  left: 50%;
+  top: 50%;
+  margin: -20px auto 0 -47px;
+  text-align: center;
+  z-index: 3;
+} */
 
 /* Footer ***************/
 footer {
@@ -167,7 +237,7 @@ footer {
   width: 100%;
   text-align: center;
   display: block;
-  background-color: #607d8b;
+  background-color: #23546d;
   /* position: fixed; */
   bottom: 0;
 }
@@ -228,5 +298,30 @@ footer {
 }
 .fa-github-alt:hover {
   background-color: #05577a;
+  color: #fff;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .headerMsg {
+    margin-top: -200px;
+  }
+  .headerName {
+    font-size: 43px;
+  }
+  .headerTitle {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .headerMsg {
+    margin-top: -225px;
+  }
+  .headerName {
+    font-size: 33px;
+  }
+  .headerTitle {
+    font-size: 14px;
+  }
 }

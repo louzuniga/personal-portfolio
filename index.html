@@ -3,9 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet"/> -->
-    <link rel="stylesheet" href="css/owl-carousel.css"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Kodchasan|Roboto+Mono"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/owl-carousel.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -13,244 +21,412 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Lourexel Zuniga</title>
   </head>
   <body>
-    <nav role="navigation">Nav</nav>
+    <!-- Pinwheel Loader container***** -->
+    <div class="loader">
+      <div class="inner-loader"></div>
+    </div>
+
+    <!-- Navbar********** -->
+    <nav id="navigation" class="navbar navbar-expand-lg sticky-top">
+      <a class="navbar-brand" href="#header">LOUREXEL</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#about">About</a>
+          <a class="nav-item nav-link" href="#skills">Skillsets</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
+          <a class="nav-item nav-link" href="#portfolio">Projects</a>
+          <a class="nav-item nav-link" href="#portfolio">Projects</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header *********** -->
     <main role="main">
-      <header role="banner">
+      <header role="banner" id="header">
         <div class="header-img">
           <img
             class="headerImg"
-            src="img/cannon-beach.jpg"
+            src="img/Drift-Creek-Bridge.jpg"
             alt="Keep your head up graffiti on wall"
           />
-        </di>
+        </div>
 
-        <div class=headerMsg>
-        <p class="headerName">Lourexel Zuniga</p>
-        <p class="headerTitle typed"></p>
+        <!-- Header Name and typed out titles***** -->
+        <div class="headerMsg">
+          <p class="headerName">Lourexel Zuniga</p>
+          <p class="headerTitle typed"></p>
         </div>
       </header>
 
+      <!-- About***** -->
       <section>
         <div id="about" class="section">
-            <div class="container">
+          <div class="container">
             <div class="row">
-                <div class="col-md-5">
-                    <img class="face-shot" src="img/face-shot.jpg" alt="">
-                </div>
+              <div class="col-md-5">
+                <img class="face-shot" src="img/face-shot.jpg" alt="" />
+              </div>
 
-                <div class="col-md-7">
-                    <h4>My name is Lourexel</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                    </p>
-                    <p> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        
-                    </p>
-                </div>
+              <div class="col-md-7">
+                <h4>Hello, my name is Lourexel</h4>
+                <p>
+                  I live for continual learning and problem solving. I embrace
+                  the challenge of full stack development and its future. I
+                  always look ahead and believe in change. My professional
+                  career displays teamwork, time management, organizational
+                  skills, problem solving and ownership of projects. My
+                  development journey continues to be exhilarating and truly
+                  life changing. I have found my passion in development and I
+                  truly can’t wait for my next opportunity.
+                </p>
+                <p>
+                  In my spare time, I always enjoy outdoor adventures with my
+                  pups and wife, shred Mt. Hood in the winter, build and fix
+                  stuff around my house, hang out with friends and I’m looking
+                  forward to learning to wind surf in Hood River this summer.
+                </p>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
       </section>
 
+      <!-- Skills******* -->
       <section>
-            <div id="skills" class="skills-section section">
-                    <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 skills-text-center">
-                            <h2>TECHNICAL SKILLS</h2>
-                            <p>I'm always learning but these are my growing skillsets:</p>
-                        </div>
+        <div id="skills" class="skills-section section">
+          <div class="skills-text">
+            <h2>TECHNICAL SKILLS</h2>
+            <p>I'm always learning but these are my current skillsets:</p>
+          </div>
 
-                        <div class="owl-carousel owl-theme">
-                                <div class="skills-desc">
-                                        <div class="box-item">
-                                            <div class="box-inner-container">
-                                                <div class="box-icon">
-                                                        <i class="fab fa-html5"></i>
-                                                </div>
-                                                <div class="box-content">
-                                                    <h2>HTML</h2>
-                                                </div>
-                                            </div>
-            
-                                        </div>
-                                </div>
-
-                                <div class="skills-desc">
-                                        <div class="box-item">
-                                            <div class="box-inner-container">
-                                                <div class="box-icon">
-                                                        <i class="fab fa-css3-alt"></i>
-                                                </div>
-                                                <div class="box-content">
-                                                    <h2>CSS</h2>
-                                                </div>
-                                            </div>
-            
-                                        </div>
-                                </div>
-
-                                <div class="skills-desc">
-                                        <div class="box-item">
-                                            <div class="box-inner-container">
-                                                <div class="box-icon">
-                                                        <i class="fab fa-js-square"></i>
-                                                </div>
-                                                <div class="box-content">
-                                                    <h2>JavaScript</h2>
-                                                </div>
-                                            </div>
-            
-                                        </div>
-                                </div>
-
-                                <div class="skills-desc">
-                                        <div class="box-item">
-                                            <div class="box-inner-container">
-                                                <div class="box-icon">
-                                                        <i class="fab fa-node"></i>
-                                                </div>
-                                                <div class="box-content">
-                                                    <h2>Node</h2>
-                                                </div>
-                                            </div>
-            
-                                        </div>
-                                </div>
-
-                                <div class="skills-desc">
-                                        <div class="box-item">
-                                            <div class="box-inner-container">
-                                                <div class="box-icon">
-                                                        <i class="fab fa-react"></i>
-                                                </div>
-                                                <div class="box-content">
-                                                    <h2>React</h2>
-                                                </div>
-                                            </div>
-            
-                                        </div>
-                                </div>
-
-                                <div class="skills-desc">
-                                        <div class="box-item">
-                                            <div class="box-inner-container">
-                                                <div class="box-icon">
-                                                        <i class="fas fa-database"></i>
-                                                </div>
-                                                <div class="box-content">
-                                                    <h2>MongoDB</h2>
-                                                </div>
-                                            </div>
-            
-                                        </div>
-                                </div>
-                        </div>
-                        
+          <div class="container">
+            <div class="row">
+              <div class="owl-carousel owl-theme">
+                <div class="skills-desc">
+                  <div class="box-item">
+                    <div class="box-inner-container">
+                      <div class="box-icon">
+                        <i class="fab fa-html5"></i>
+                      </div>
+                      <div class="box-content">
+                        <h2>HTML</h2>
+                      </div>
                     </div>
-                    </div>
-                </div>      </section>
+                  </div>
+                </div>
 
-      <section>
-            <div id="contact" class="contact-section section">   
-            <div class="col-md-12 text-center">
-                <p class="sub-heading">Want to grab coffee and chat?</p>
-                <h2>I'd love to hear from you!</h2>
-                <button class="contact-button"><a class="contact-button-text" href="mailTo:lourexelzuniga@gmail.com" >SEND AN EMAIL</a></button>       
-            </div> 
-        </div>  
+                <div class="skills-desc">
+                  <div class="box-item">
+                    <div class="box-inner-container">
+                      <div class="box-icon">
+                        <i class="fab fa-css3-alt"></i>
+                      </div>
+                      <div class="box-content">
+                        <h2>CSS</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills-desc">
+                  <div class="box-item">
+                    <div class="box-inner-container">
+                      <div class="box-icon">
+                        <i class="fab fa-js-square"></i>
+                      </div>
+                      <div class="box-content">
+                        <h2>JavaScript</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills-desc">
+                  <div class="box-item">
+                    <div class="box-inner-container">
+                      <div class="box-icon">
+                        <i class="fab fa-node"></i>
+                      </div>
+                      <div class="box-content">
+                        <h2>Node</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills-desc">
+                  <div class="box-item">
+                    <div class="box-inner-container">
+                      <div class="box-icon">
+                        <i class="fab fa-react"></i>
+                      </div>
+                      <div class="box-content">
+                        <h2>React</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills-desc">
+                  <div class="box-item">
+                    <div class="box-inner-container">
+                      <div class="box-icon">
+                        <i class="fas fa-database"></i>
+                      </div>
+                      <div class="box-content">
+                        <h2>MongoDB</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-
+      <!-- Contact****** -->
       <section>
-            <div id="portfolio" class="section">
-                <div class="portfolio-heading">
-                    <h2>PORTFOLIO</h2>
+        <div id="contact" class="contact-section section">
+          <div class="col-md-12 text-center">
+            <p class="sub-heading">Want to grab coffee and chat?</p>
+            <h2>I'd love to hear from you!</h2>
+            <button class="contact-button">
+              <a
+                class="contact-button-text"
+                href="mailTo:lourexelzuniga@gmail.com"
+                >SEND AN EMAIL</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects******* -->
+      <section>
+        <div id="portfolio" class="section">
+          <div class="portfolio-heading">
+            <h2>PROJECTS</h2>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <!-- Dog-Quiz -->
+              <div class="col-md-7 portfolio-text">
+                <div class="heading-icons">
+                  <h4 class="heading-text">DOG QUIZ</h4>
+                  <a
+                    class="portfolio-icons"
+                    href="https://louzuniga.github.io/dog-quiz/"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    class="portfolio-icons"
+                    href="https://github.com/louzuniga/dog-quiz"
+                    target="_blank"
+                    ><i class="fab fa-github-alt"></i
+                  ></a>
                 </div>
+                <p>
+                  This is my very first app that I’ve created! I learned that
+                  brainstorming and figuring out what I wanted to build was my
+                  number one challenge. My other problems were coding the app,
+                  of course. This is a simple ten (10) questions quiz all about
+                  dogs. Try it out!
+                </p>
+                <p>HTML, CSS, JavaScript and jQuery</p>
+              </div>
+              <div class="col-md-5">
+                <img
+                  class="portfolio-img"
+                  src="img/dog-quiz-main-page.png"
+                  alt="Dog quiz homepage screenshot"
+                />
+                <!-- <div class="img-icons">
+                  <a
+                    href="https://louzuniga.github.io/dog-quiz/"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/louzuniga/dog-quiz"
+                    target="_blank"
+                    ><i class="fab fa-github-alt"></i
+                  ></a>
+                </div> -->
+              </div>
 
-                <div class="container">
-                <div class="row">
-                    
-                    <div class="col-md-7 portfolio-text">
-                        <div class="heading-icons">
-                        <h4 class="heading-text">DOG QUIZ</h4>
-                        <a class="portfolio-icons" href="https://louzuniga.github.io/dog-quiz/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        <a class="portfolio-icons" href="https://github.com/louzuniga/dog-quiz" target="_blank"><i class="fab fa-github-alt"></i></a>
-                        </div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        </p>
-                    </div>
-                    <div class="col-md-5">
-                        <img class="portfolio-img" src="img/dog-quiz-main-page.png" alt="Dog quiz homepage screenshot">
-                    </div>
-
-
-                    <div class="col-md-7 portfolio-text">
-                        <div class="heading-icons">
-                        <h4 class="heading-text">RANDOM</h4>
-                        <a class="portfolio-icons" href="https://louzuniga.github.io/random/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        <a class="portfolio-icons" href="https://github.com/louzuniga/random" target="_blank"><i class="fab fa-github-alt"></i></a>
-                        </div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        </p>
-                    </div>
-                    <div class="col-md-5">
-                        <img class="portfolio-img" src="img/random-app.png" alt="Random app homepage screenshot">
-                    </div>
-
-
-                    <div class="col-md-7 portfolio-text">
-                        <div class="heading-icons">
-                        <h4 class="heading-text">F.I.R.E</h4>
-                        <a class="portfolio-icons" href="https://fire-node-app.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        <a class="portfolio-icons" href="https://github.com/louzuniga/dog-quiz" target="_blank"><i class="fab fa-github-alt"></i></a>
-                        </div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        </p>
-                    </div>
-                    <div class="col-md-5">
-                        <img class="portfolio-img" src="img/FIRE-app.png" alt="F.I.R.E quiz app screenshot">
-                    </div>
-        
+              <!-- RANDOM -->
+              <div class="col-md-7 portfolio-text">
+                <div class="heading-icons">
+                  <h4 class="heading-text">RANDOM</h4>
+                  <a
+                    class="portfolio-icons"
+                    href="https://louzuniga.github.io/random/"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    class="portfolio-icons"
+                    href="https://github.com/louzuniga/random"
+                    target="_blank"
+                    ><i class="fab fa-github-alt"></i
+                  ></a>
                 </div>
+                <p>
+                  RANDOM consists on four (4) random options to peruse through
+                  that generates random things from its respective API. You can
+                  choose to view random advice, activities, dog pictures, or cat
+                  pictures. This app was inspired by searching through random
+                  API’s, so I decided to create a random app. I think the title
+                  suits it purpose perfectly.
+                </p>
+                <p>HTML, CSS, JavaScript and jQuery</p>
+              </div>
+              <div class="col-md-5">
+                <img
+                  class="portfolio-img"
+                  src="img/random-app.png"
+                  alt="Random app homepage screenshot"
+                />
+              </div>
+
+              <!-- F.I.R.E -->
+              <div class="col-md-7 portfolio-text">
+                <div class="heading-icons">
+                  <h4 class="heading-text">F.I.R.E</h4>
+                  <a
+                    class="portfolio-icons"
+                    href="https://fire-node-app.herokuapp.com/"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    class="portfolio-icons"
+                    href="https://github.com/louzuniga/dog-quiz"
+                    target="_blank"
+                    ><i class="fab fa-github-alt"></i
+                  ></a>
                 </div>
+                <p>
+                  F.I.R.E stands for Financial Freedom Retire Early. This app
+                  starts off with a questionnaire to engage the user, then it
+                  allows the user to log his/her income, expenses and savings
+                  and then out the results in a pie chart. The app accomplishes
+                  aspects of thinking through the questionnaire, action by
+                  logging information, and then allowing the user to visually
+                  know where his/her money is going towards.
+                </p>
+                <p>
+                  Front-End: HTML, CSS, JavaScript and jQuery,
+                  <br />
+                  Back-End: Node, MongoDB, Mongoose, Express, Mocha, Chai,
+                  RESTful API
+                  <br />
+                  Host: mLab, Heroku
+                </p>
+              </div>
+              <div class="col-md-5">
+                <img
+                  class="portfolio-img"
+                  src="img/FIRE-app.png"
+                  alt="F.I.R.E website login screenshot"
+                />
+              </div>
+
+              <!-- Vent-about-cancer -->
+              <div class="col-md-7 portfolio-text">
+                <div class="heading-icons">
+                  <h4 class="heading-text">VENT ABOUT CANCER</h4>
+                  <a class="portfolio-icons" href="" target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    class="portfolio-icons"
+                    href="https://github.com/louzuniga/vent-about-cancer-react"
+                    target="_blank"
+                    ><i class="fab fa-github-alt"></i
+                  ></a>
+                </div>
+                <p>
+                  // comingSoon
+                </p>
+                <p></p>
+              </div>
+              <div class="col-md-5">
+                <img
+                  class="portfolio-img"
+                  src="img/coming-soon.jpg"
+                  alt="Vent-about-cancer screenshot"
+                />
+              </div>
             </div>
-          </section>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- copyright and social icons -->
+    <!-- copyright and social icons******** -->
     <footer role="content-info">
-        <div class="footer-social-icons">
-            <ul class="social-icons">
-                <li class="footer-list"><a id="copyright" class="social-icon"></a></li>
-                <li class="footer-list"><a href="mailto:lourexelzuniga@gmail.com?Subject=Personal-Portfolio" class="social-icon">
-                        <i class="fas fa-envelope-open"></i></a></li>
-                <li class="footer-list"><a href="https://www.linkedin.com/in/lourexelzuniga/" class="social-icon"> <i
-                            class="fab fa-linkedin"></i></a></li>
-                <li class="footer-list"><a href="https://github.com/louzuniga" class="social-icon"> <i class="fab fa-github-alt"></i></a></li>
-                <li class="footer-list"><a href="https://twitter.com/louzuniga" class="social-icon"> <i class="fab fa-twitter"></i></a></li>
-            </ul>
-        </div>
+      <div class="footer-social-icons">
+        <ul class="social-icons">
+          <li class="footer-list">
+            <a id="copyright" class="social-icon"></a>
+          </li>
+          <li class="footer-list">
+            <a
+              href="mailto:lourexelzuniga@gmail.com?Subject=Personal-Portfolio"
+              class="social-icon"
+            >
+              <i class="fas fa-envelope-open"></i
+            ></a>
+          </li>
+          <li class="footer-list">
+            <a
+              href="https://www.linkedin.com/in/lourexelzuniga/"
+              class="social-icon"
+            >
+              <i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li class="footer-list">
+            <a href="https://github.com/louzuniga" class="social-icon">
+              <i class="fab fa-github-alt"></i
+            ></a>
+          </li>
+          <li class="footer-list">
+            <a href="https://twitter.com/louzuniga" class="social-icon">
+              <i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </footer>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
     <script src="js/owl-carousel.js"></script>
     <script src="js/typed.js"></script>
     <script src="js/script.js"></script>
-   
   </body>
 </html>
