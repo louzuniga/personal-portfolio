@@ -66,12 +66,10 @@ body {
 }
 .headerName {
   font-size: 63px;
-  /* background-color: rgba(135, 139, 143, 0.7); */
   letter-spacing: 6px;
 }
 .headerTitle {
   font-size: 36px;
-  /* background-color: rgba(135, 139, 143, 0.7); */
   letter-spacing: 6px;
 }
 
@@ -81,7 +79,7 @@ body {
 }
 .face-shot {
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
 }
 
 /* Skills **************** */
@@ -238,7 +236,6 @@ footer {
   text-align: center;
   display: block;
   background-color: #23546d;
-  /* position: fixed; */
   bottom: 0;
 }
 .social-icon {
@@ -315,9 +312,9 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
-  .headerMsg {
+  /* .headerMsg {
     margin-top: -225px;
-  }
+  } */
   .headerName {
     font-size: 33px;
   }
