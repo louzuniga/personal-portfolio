@@ -172,6 +172,9 @@ body {
 }
 
 /* Projects********** */
+.portfolio-col {
+  display: inline-flex;
+}
 #portfolio {
   background-color: #607d8b;
 }
@@ -299,7 +302,7 @@ footer {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .headerMsg {
     margin-top: -200px;
   }
@@ -308,6 +311,12 @@ footer {
   }
   .headerTitle {
     font-size: 16px;
+  }
+  .portfolio-img {
+    margin: 0 0 100px;
+  }
+  .portfolio-text {
+    margin: 50px 0 0;
   }
 }
 
