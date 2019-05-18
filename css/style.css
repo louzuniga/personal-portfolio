@@ -145,22 +145,19 @@ body {
   background: url(../img/coffee-sm.jpg) no-repeat;
   background-size: cover;
 }
-.contact-button {
-  padding: 15px 20px;
+.contact-icon {
+  padding: 10px 14px;
   display: inline-block;
   margin-top: 20px;
   border-radius: 3px;
   background-color: #607d8b;
+  color: #fff;
+  margin: 10px;
 }
-.contact-button:hover {
+.contact-icon:hover {
   background-color: #fff;
-}
-.contact-button-text:hover {
   color: #333;
   text-decoration: none;
-}
-.contact-button-text {
-  color: #fff;
 }
 
 /* Projects********** */
