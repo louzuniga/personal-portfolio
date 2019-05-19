@@ -45,12 +45,20 @@ $(document).ready(() => {
     }
   });
 
-  // navbar click scroll
-  $('#navigation a').click(function(event) {
-    event.preventDefault();
+  // Navbar responsive function
+  $('#nav').on('click', event => {
+    let nav = document.getElementById('nav');
+    if (nav.className === 'nav-list') {
+      nav.className += ' responsive';
+    } else {
+      nav.className = 'nav-list';
+    }
+  });
 
+  // navbar responsive
+  $('.page-nav').click(function(event) {
     const targetElement = $(this).attr('href');
     const targetPosition = $(targetElement).offset().top;
-    $('html, body').animate({ scrollTop: targetPosition - 100 }, 'slow');
+    $('html, body').animate({ scrollTop: targetPosition - 50 }, 'slow');
   });
 });
