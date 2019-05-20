@@ -9,7 +9,7 @@ body {
   margin: 0;
 }
 .section {
-  padding: 90px 10px;
+  padding: 90px 60px;
 }
 
 /* Grid Layout */
@@ -405,6 +405,9 @@ footer {
   }
   .row {
     display: block;
+  }
+  .section {
+    padding: 90px 10px;
   }
   .headerMsg {
     margin-top: -180px;
