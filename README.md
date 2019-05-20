@@ -6,7 +6,7 @@ Please feel free to reach out with any questions or if you just simply want to k
 
 ## Live App
 
-[](https://louzuniga.com/)
+> https://louzuniga.com/
 
 ## Technology
 
