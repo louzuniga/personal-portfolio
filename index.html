@@ -14,14 +14,7 @@
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/owl-carousel.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="style.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link
       rel="icon"
@@ -35,7 +28,6 @@
       sizes="16x16"
       href="../LZ-favicon/favicon-16x16.png"
     />
-    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
     <title>Lou Zuniga</title>
   </head>
   <body>
@@ -71,10 +63,8 @@
         </div>
 
         <!-- Header Name and typed out titles***** -->
-        
         <div class="headerMsg">
           <p class="headerName">Lourexel Zuniga</p>
-          <!-- <p class="headerTitle typed"></p> -->
           <span
           class="txt-rotate headerTitle"
           data-period="2000"
@@ -87,13 +77,13 @@
         <div id="about" class="section">
           <div class="container">
             <div class="row">
-              <div class="col-md-5">
+              <div class="col-6">
                 <img class="face-shot" src="img/face-shot.jpg" alt="" />
               </div>
 
-              <div class="col-md-7">
-                <h4>Hello, my name is Lourexel</h4>
-                <p>
+              <div class="col-6">
+                <h4 class="about-title">Hello, my name is Lourexel</h4>
+                <p class="about-text">
                   I live for continual learning and problem solving. I embrace
                   the challenge of full stack development and its future. I
                   always look ahead and believe in change. My professional
@@ -103,8 +93,8 @@
                   I have found my passion in development and I truly can’t wait
                   for my next opportunity.
                 </p>
-                <p>
-                  In my spare time, I enjoy outdoor adventures with my pups and
+                <p class="about-text">
+                  Aside from coding and geeking out on new tech, I enjoy outdoor adventures with my pups and
                   wife, shred Mt. Hood in the winter, build and fix stuff around
                   my house, hang out with friends and I’m looking forward to
                   learning to wind surf in Hood River, OR this summer.
@@ -116,16 +106,13 @@
       </section>
 
       <!-- Skills******* -->
-      <section>
+      <section> 
         <div id="skills" class="skills-section section">
           <div class="skills-text">
             <h2>TECHNICAL SKILLS</h2>
             <p>I'm always learning but these are my current skillsets:</p>
           </div>
-
-          <div class="container">
-            <div class="row">
-              <div class="owl-carousel owl-theme">
+          <div class="slideshow-container">
                 <div class="skills-desc">
                   <div class="box-item">
                     <div class="box-inner-container">
@@ -203,16 +190,66 @@
                     </div>
                   </div>
                 </div>
-              </div>
+
+                <div class="skills-desc">
+                    <div class="box-item">
+                      <div class="box-inner-container">
+                        <div class="box-icon">
+                          <i class="fas fa-database"></i>
+                        </div>
+                        <div class="box-content">
+                          <h2>mLab</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="skills-desc">
+                    <div class="box-item">
+                      <div class="box-inner-container">
+                        <div class="box-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <div class="box-content">
+                          <h2>Git</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="skills-desc">
+                    <div class="box-item">
+                      <div class="box-inner-container">
+                        <div class="box-icon">
+                            <i class="fas fa-laptop-medical"></i>
+                        </div>
+                        <div class="box-content">
+                          <h2>Chai</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="skills-desc">
+                    <div class="box-item">
+                      <div class="box-inner-container">
+                        <div class="box-icon">
+                            <i class="fas fa-laptop-medical"></i>
+                        </div>
+                        <div class="box-content">
+                          <h2>Mocha</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
-          </div>
         </div>
       </section>
 
       <!-- Contact****** -->
       <section>
         <div id="contact" class="contact-section section">
-          <div class="col-md-12 text-center">
+          <div class="text-center">
             <p class="sub-heading">Want to grab coffee and chat?</p>
             <h2>I'd love to hear from you!</h2>
             <a href="https://twitter.com/louzuniga" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter contact-icon">#Tweet</i></a>
@@ -230,9 +267,9 @@
           </div>
 
           <div class="container">
-            <div class="row">
+              <div class="row">
               <!-- Dog-Quiz -->
-              <div class="col-md-7 portfolio-text">
+              <div class="col-6 portfolio-text">
                 <div class="heading-icons">
                   <h4 class="heading-text">DOG QUIZ</h4>
                   <a
@@ -257,7 +294,7 @@
                 </p>
                 <p>HTML, CSS, JavaScript and jQuery</p>
               </div>
-              <div class="col-md-5 img-overlay">
+              <div class="col-6 img-overlay">
                     <img
                       class="portfolio-img"
                       src="img/dog-quiz-main-page.png"
@@ -276,9 +313,11 @@
                     ></a>
                   </div>
               </div>
+            </div>
 
               <!-- RANDOM -->
-              <div class="col-md-7 portfolio-text">
+              <div class="row">
+              <div class="col-6 portfolio-text">
                 <div class="heading-icons">
                   <h4 class="heading-text">RANDOM</h4>
                   <a
@@ -304,7 +343,7 @@
                 </p>
                 <p>HTML, CSS, JavaScript and jQuery</p>
               </div>
-              <div class="col-md-5 img-overlay">
+              <div class="col-6 img-overlay">
                   <img
                     class="portfolio-img"
                     src="img/random-app.png"
@@ -324,9 +363,11 @@
                     ></a>
                   </div>
               </div>
+              </div>
 
               <!-- F.I.R.E -->
-              <div class="col-md-7 portfolio-text">
+              <div class="row">
+              <div class="col-6 portfolio-text">
                 <div class="heading-icons">
                   <h4 class="heading-text">F.I.R.E</h4>
                   <a
@@ -360,7 +401,7 @@
                   Host: mLab, Heroku
                 </p>
               </div>
-              <div class="col-md-5 img-overlay">
+              <div class="col-6 img-overlay">
                   <img
                     class="portfolio-img"
                     src="img/FIRE-app.png"
@@ -377,9 +418,11 @@
                     ></a>
                   </div>
               </div>
+              </div>
 
               <!-- Vent-about-cancer -->
-              <div class="col-md-7 portfolio-text">
+              <div class="row">
+              <div class="col-6 portfolio-text">
                 <div class="heading-icons">
                   <h4 class="heading-text">// comingSoon</h4>
                   <a class="portfolio-icons" href="" target="_blank"
@@ -403,7 +446,7 @@
                     Host: mLab, Heroku
                 </p>
               </div>
-              <div class="col-md-5 img-overlay">
+              <div class="col-6 img-overlay">
                 <img
                   class="portfolio-img"
                   src="img/coming-soon.jpg"
@@ -423,7 +466,7 @@
                     ></a>
                   </div>
               </div>
-            </div>
+              </div>
           </div>
         </div>
       </section>
@@ -446,33 +489,27 @@
           </li>
           <li class="footer-list">
             <a
-              href="https://www.linkedin.com/in/lourexelzuniga/"
+              href="https://www.linkedin.com/in/lourexelzuniga/" target="_blank"
               class="social-icon"
             >
               <i class="fab fa-linkedin"></i
             ></a>
           </li>
           <li class="footer-list">
-            <a href="https://github.com/louzuniga" class="social-icon">
+            <a href="https://github.com/louzuniga" target="_blank" class="social-icon">
               <i class="fab fa-github-alt"></i
             ></a>
           </li>
           <li class="footer-list">
-            <a href="https://twitter.com/louzuniga" class="social-icon">
+            <a href="https://twitter.com/louzuniga" target="_blank" class="social-icon">
               <i class="fab fa-twitter"></i
             ></a>
           </li>
         </ul>
       </div>
     </footer>
-
+    <!-- Scripts************* -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <!-- <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script> -->
-    <script src="js/owl-carousel.js"></script>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

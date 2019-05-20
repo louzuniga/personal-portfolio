@@ -1,18 +1,11 @@
 'use strict';
 
-//pinwheel loader
-$(window).on('load', () => {
-  $('.loader .inner-loader').fadeOut(300, () => {
-    $('.loader').fadeOut(500);
-  });
-});
-
 // self-typing header titles
 let TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
-  this.period = parseInt(period, 5) || 500;
+  this.period = parseInt(period, 7) || 700;
   this.txt = '';
   this.tick();
   this.isDeleting = false;
@@ -31,7 +24,7 @@ TxtRotate.prototype.tick = function() {
   this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
   let that = this;
-  let delta = 150 - Math.random() * 100;
+  let delta = 200 - Math.random() * 100;
 
   if (this.isDeleting) {
     delta /= 2;
@@ -43,7 +36,7 @@ TxtRotate.prototype.tick = function() {
   } else if (this.isDeleting && this.txt === '') {
     this.isDeleting = false;
     this.loopNum++;
-    delta = 300;
+    delta = 350;
   }
 
   setTimeout(function() {
@@ -62,27 +55,16 @@ window.onload = function() {
   }
 };
 
-// Footer and copyright ************
-let d = new Date();
-$('#copyright').text(`Copyright \u00A9 ${d.getFullYear()}  Lourexel Zuniga`);
+// /////////////////////////////////////////
+// jQuery Triggers*****************////////
+//////////////////////////////////////////
 
 $(document).ready(() => {
-  // Skillset carousel
-  $('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 3
-      },
-      1000: {
-        items: 5
-      }
-    }
+  //pinwheel loader
+  $(window).on('load', () => {
+    $('.loader .inner-loader').fadeOut(300, () => {
+      $('.loader').fadeOut(500);
+    });
   });
 
   // Navbar responsive function
@@ -101,4 +83,8 @@ $(document).ready(() => {
     const targetPosition = $(targetElement).offset().top;
     $('html, body').animate({ scrollTop: targetPosition - 50 }, 'slow');
   });
+
+  // Footer and copyright ************
+  let d = new Date();
+  $('#copyright').text(`Copyright \u00A9 ${d.getFullYear()}  Lourexel Zuniga`);
 });

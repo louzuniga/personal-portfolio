@@ -1,13 +1,38 @@
 * {
-  /* font-family: 'Roboto Mono', monospace; */
+  box-sizing: border-box;
   font-family: 'Kodchasan', sans-serif;
 }
-
 body {
-  font-size: 14px;
   color: #333;
   background-color: #fff;
   letter-spacing: 2px;
+  margin: 0;
+}
+.section {
+  padding: 90px 10px;
+}
+
+/* Grid Layout */
+.row {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  display: inline-flex;
+}
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.col-6 {
+  float: left;
+  width: 66.66666%;
+  padding: 10px;
+}
+.col-3 {
+  float: left;
+  width: 33.33333%;
+  padding: 10px;
 }
 
 /* Pinwheel loader on reload */
@@ -72,7 +97,7 @@ body {
   text-align: center;
   color: rgb(241, 241, 252);
   z-index: 5;
-  margin-top: -55px;
+  margin-top: -120px;
 }
 .headerName {
   font-size: 63px;
@@ -84,15 +109,28 @@ body {
 }
 
 /* About********** */
-.section {
-  padding: 100px 0;
+.about-title {
+  margin: 0;
+  font-size: 28px;
+}
+.about-text {
+  font-size: 20px;
 }
 .face-shot {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
+  display: block;
+  margin-left: 15%;
+  border-radius: 3px;
 }
 
 /* Skills **************** */
+.slideshow-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin: 0 auto;
+}
 .skills-text h2 {
   background-color: #23546d;
   padding: 10px;
@@ -107,6 +145,9 @@ body {
 .skills-section {
   background-color: #607d8b;
   color: #fff;
+}
+.skills-desc {
+  margin: 0 20px;
 }
 .box-item {
   margin-top: 30px;
@@ -153,15 +194,19 @@ body {
   font-size: 35px;
   margin-left: -20%;
 }
-.col-md-3,
-.col-sm-6 {
-  max-width: 100%;
-}
 
 /* Contact******** */
 .contact-section {
   background: url(../img/coffee-sm.jpg) no-repeat;
   background-size: cover;
+}
+.text-center {
+  text-align: center;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 .contact-icon {
   padding: 10px 14px;
@@ -185,7 +230,7 @@ body {
 #portfolio {
   background-color: #607d8b;
 }
-.portfolio-heading {
+.portfolio-heading h2 {
   background-color: #23546d;
   padding: 10px;
   height: 60px;
@@ -198,7 +243,7 @@ body {
   border-radius: 3px;
 }
 .portfolio-text {
-  margin: 50px 0;
+  margin: 100px 0;
   color: #fff;
 }
 .portfolio-icons {
@@ -225,20 +270,30 @@ body {
 }
 .heading-text {
   margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 22px;
 }
 .img-overlay {
   margin: 100px 0 0;
+  position: relative;
+  width: 50%;
+  margin-left: 10%;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
 }
 .img-overlay .img-icons {
   transition: 0.5s ease;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  text-align: center;
-  z-index: 3;
   opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 .img-overlay:hover .img-icons {
   opacity: 1;
@@ -335,9 +390,24 @@ footer {
   border-radius: 5px;
 }
 
+@media screen and (max-width: 1080px) {
+  .face-shot {
+    margin-left: 0%;
+  }
+  .img-overlay {
+    margin-left: 0%;
+  }
+}
 @media screen and (max-width: 760px) {
+  .col-6,
+  .col-3 {
+    width: 100%;
+  }
+  .row {
+    display: block;
+  }
   .headerMsg {
-    margin-top: -160px;
+    margin-top: -180px;
   }
   .headerName {
     font-size: 43px;
@@ -347,6 +417,15 @@ footer {
   }
   .img-overlay {
     margin: 0 0 100px;
+  }
+  .about-title {
+    font-size: 22px;
+  }
+  .about-text {
+    font-size: 18px;
+  }
+  .face-shot {
+    max-width: 320px;
   }
   .portfolio-text {
     margin: 50px 0 0;
@@ -376,9 +455,9 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
-  /* .headerMsg {
+  .headerMsg {
     margin-top: -200px;
-  } */
+  }
   .headerName {
     font-size: 33px;
   }
