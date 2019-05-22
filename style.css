@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Kodchasan', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 body {
   color: #333;
@@ -129,21 +129,25 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 .skills-text h2 {
-  background-color: #23546d;
+  /* background-color: #23546d; */
   padding: 10px;
   height: 60px;
   text-align: center;
   width: 100%;
   color: #fff;
+  font-size: 48px;
+  margin: 5px;
 }
 .skills-section p {
   text-align: center;
+  font-size: 22px;
 }
 .skills-section {
-  background-color: #607d8b;
+  background-color: #23546d;
+  /* background-color: #607d8b; */
   color: #fff;
 }
 .skills-desc {
@@ -231,12 +235,14 @@ body {
   background-color: #607d8b;
 }
 .portfolio-heading h2 {
-  background-color: #23546d;
+  /* background-color: #23546d; */
   padding: 10px;
   height: 60px;
   text-align: center;
   width: 100%;
   color: #fff;
+  font-size: 48px;
+  margin: 0;
 }
 .portfolio-img {
   max-width: 100%;
