@@ -212,14 +212,20 @@ body {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+.text-center p {
+  font-size: 22px;
+}
+.text-center h2 {
+  font-size: 28px;
+}
 .contact-icon {
   padding: 10px 14px;
   display: inline-block;
-  margin-top: 20px;
   border-radius: 3px;
   background-color: #607d8b;
   color: #fff;
   margin: 10px;
+  font-size: 30px;
 }
 .contact-icon:hover {
   background-color: #fff;
@@ -277,7 +283,7 @@ body {
 .heading-text {
   margin-top: 8px;
   margin-bottom: 0;
-  font-size: 22px;
+  font-size: 28px;
 }
 .img-overlay {
   margin: 100px 0 0;
