@@ -9,7 +9,7 @@ body {
   margin: 0;
 }
 .section {
-  padding: 90px 140px;
+  padding: 90px 100px;
 }
 
 /* Grid Layout */
@@ -50,7 +50,7 @@ body {
 .loader .inner-loader {
   width: 100%;
   height: 100%;
-  background: url(../img/pinwheel-loader.gif) center center no-repeat;
+  background: url(./img/pinwheel-loader.gif) center center no-repeat;
 }
 
 /* Navbar********* */
@@ -129,17 +129,17 @@ body {
 /* Skills **************** */
 .slideshow-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
   margin: 0 auto 40px;
 }
 .skills-text {
   /* background-color: #23546d; */
-  padding: 10px;
+  padding: 0 0 10px;
   text-align: center;
   width: 100%;
   color: #fff;
-  margin: 5px;
+  margin: 0 0 5px;
 }
 .skills-text h2 {
   font-size: 48px;
@@ -203,7 +203,7 @@ body {
 
 /* Contact******** */
 .contact-section {
-  background: url(../img/coffee-sm.jpg) no-repeat;
+  background: url(./img/coffee-sm.jpg) no-repeat;
   background-size: cover;
 }
 .text-center {
@@ -242,22 +242,18 @@ body {
 #portfolio {
   background-color: #607d8b;
 }
-.portfolio-heading h2 {
-  /* background-color: #23546d; */
-  padding: 10px;
-  height: 60px;
+.portfolio-heading {
+  padding: 0 0 10px;
   text-align: center;
   width: 100%;
   color: #fff;
-  font-size: 48px;
-  margin: 0;
+  margin: 0 0 5px;
 }
-.portfolio-img {
-  max-width: 100%;
-  border-radius: 3px;
+.portfolio-heading h2 {
+  font-size: 48px;
 }
 .portfolio-text {
-  margin: 100px 0;
+  margin: 0 0 100px;
   color: #fff;
 }
 .portfolio-icons {
@@ -287,14 +283,15 @@ body {
   margin-bottom: 0;
   font-size: 28px;
 }
+.portfolio-img {
+  max-width: 100%;
+  border-radius: 3px;
+}
 .img-overlay {
-  margin: 100px 0 0;
+  margin-top: 50px;
   position: relative;
-  width: 50%;
-  margin-left: 10%;
   opacity: 1;
   display: block;
-  width: 100%;
   height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
@@ -404,15 +401,15 @@ footer {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 1080px) {
-  .face-shot {
-    margin-left: 0%;
+@media screen and (max-width: 1280px) {
+  .section {
+    padding: 20px;
   }
-  .img-overlay {
-    margin-left: 0%;
+  .slideshow-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
   .col-6,
   .col-3 {
     width: 100%;
