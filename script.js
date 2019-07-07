@@ -59,7 +59,7 @@ window.onload = function() {
 // jQuery Triggers*****************////////
 //////////////////////////////////////////
 
-$(document).ready(() => {
+$(function() {
   //pinwheel loader
   $(window).on('load', () => {
     $('.loader .inner-loader').fadeOut(300, () => {
